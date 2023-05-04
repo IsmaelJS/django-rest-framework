@@ -1208,7 +1208,7 @@ class TestMinMaxDecimalField(FieldValues):
     }
     invalid_inputs = {
         '9.9': ['Ensure this value is greater than or equal to 10.1.'],
-        '20.2': ['Ensure this value is less than or equal to 20.2.'],
+        '20.2': ['Ensure this value is less than or equal to 20.1.'],
     }
     outputs = {}
     field = serializers.DecimalField(
