@@ -3,6 +3,7 @@ This test "app" exists to ensure that parts of Django REST Framework can be
 imported/invoked before Django itself has been fully initialized.
 """
 from decimal import Decimal
+
 from rest_framework import compat, serializers  # noqa
 
 
