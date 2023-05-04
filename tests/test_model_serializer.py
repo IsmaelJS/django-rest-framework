@@ -1095,7 +1095,7 @@ class DecimalFieldModel(models.Model):
     decimal_field = models.DecimalField(
         max_digits=3,
         decimal_places=1,
-        validators=[MinValueValidator(1), MaxValueValidator(3)]
+        validators=[MinValueValidator(decimal.Decimal('1')), MaxValueValidator(decimal.Decimal('3'))]
     )
 
 
